@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const TelegramBot = require("node-telegram-bot-api");
 
-const TOKEN = "ТУТ_ТВІЙ_НОВИЙ_ТОКЕН";
+const TOKEN = process.env.TOKEN;
 const LIMIT = 15;
 
 const bot = new TelegramBot(TOKEN);
